@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--限制字数控件-->
+    <declare-styleable name="MultiEditInputView">
+        <attr name="maxCount" format="integer"/>
+        <attr name="IgnoreCnOrEn" format="boolean"/>
+        <attr name="hintText" format="string"/>
+        <attr name="contentText" format="string"/>
+        <attr name="contentHeight" format="dimension"/>
+    </declare-styleable>
+
+</resources>
