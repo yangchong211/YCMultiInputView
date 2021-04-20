@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/YCMultiInputView.iml" filepath="$PROJECT_DIR$/YCMultiInputView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/YCMultiInputViewLib/YCMultiInputViewLib.iml" filepath="$PROJECT_DIR$/YCMultiInputViewLib/YCMultiInputViewLib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/YCUiToolHelper.iml" filepath="$PROJECT_DIR$/.idea/YCUiToolHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCMultiInputViewLib/YCUiToolHelper.YCMultiInputViewLib.iml" filepath="$PROJECT_DIR$/.idea/modules/YCMultiInputViewLib/YCUiToolHelper.YCMultiInputViewLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YCUiToolHelper.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YCUiToolHelper.app.iml" />
     </modules>
   </component>
 </project>
