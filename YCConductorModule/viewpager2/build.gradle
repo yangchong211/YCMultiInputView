@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    testImplementation rootProject.ext.junit
+    testImplementation rootProject.ext.roboelectric
+
+    implementation rootProject.ext.androidxAppCompat
+    implementation rootProject.ext.androidxViewPager2
+    implementation project(':YCConductor')
+}
+
+ext.artifactId = 'conductor-viewpager2'
+
+apply from: rootProject.file('dependencies.gradle')

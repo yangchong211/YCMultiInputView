@@ -1,0 +1,24 @@
+apply from: rootProject.file('dependencies.gradle')
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+}
+
+dependencies {
+    api rootProject.ext.rxJava2
+    api rootProject.ext.autodispose
+    api rootProject.ext.autodisposeLifecycle
+
+    implementation project(':YCConductor')
+}
+
+ext.artifactId = 'conductor-autodispose'

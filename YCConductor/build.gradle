@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles 'proguard-rules.txt'
+    }
+}
+
+dependencies {
+    testImplementation rootProject.ext.junit
+    testImplementation rootProject.ext.roboelectric
+
+    api rootProject.ext.androidxAnnotations
+
+//    lintPublish project(':conductor-lint')
+    compile project(path: ':YCConductorLint')
+}
+
+ext.artifactId = 'conductor'
+
+apply from: rootProject.file('dependencies.gradle')

@@ -1,12 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    apply from: rootProject.file('dependencies.gradle')
     repositories {
+        mavenCentral()
         jcenter()
         google()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         //添加下面两句，进行配置
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
@@ -18,10 +21,14 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenCentral()
         jcenter()
         google()
     }
 }
+
+apply from: rootProject.file('dependencies.gradle')
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

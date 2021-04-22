@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    defaultConfig {
+        applicationId "com.bluelinelabs.conductor.demo"
+        minSdkVersion 21
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+        vectorDrawables.useSupportLibrary true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+//    buildFeatures {
+//        viewBinding = true
+//    }
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation rootProject.ext.androidxAppCompat
+    implementation rootProject.ext.androidxViewPager2
+    implementation rootProject.ext.material
+    implementation rootProject.ext.androidxCoreKtx
+
+    implementation rootProject.ext.archComponentsLiveDataCore // Fix duplicate classes
+
+    implementation rootProject.ext.picasso
+
+    implementation rootProject.ext.autodisposeKtx
+
+    implementation project(':YCConductor')
+    implementation project(':conductor-modules:viewpager')
+    implementation project(':conductor-modules:viewpager2')
+    implementation project(':conductor-modules:rxlifecycle2')
+    implementation project(':conductor-modules:autodispose')
+    implementation project(':conductor-modules:arch-components-lifecycle')
+    implementation project(':conductor-modules:androidx-transition')
+
+    debugImplementation rootProject.ext.leakCanary
+    releaseImplementation rootProject.ext.leakCanaryNoOp
+    testImplementation rootProject.ext.leakCanaryNoOp
+}

@@ -1,0 +1,21 @@
+apply plugin: 'java-library'
+
+configurations {
+    lintChecks
+}
+
+dependencies {
+    compileOnly rootProject.ext.lintapi
+    compileOnly rootProject.ext.lintchecks
+
+    testImplementation rootProject.ext.lint
+    testImplementation rootProject.ext.lintTests
+}
+
+jar {
+    manifest {
+        attributes('Lint-Registry-v2': 'com.bluelinelabs.conductor.lint.IssueRegistry')
+    }
+}
+
+apply from: rootProject.file('dependencies.gradle')
