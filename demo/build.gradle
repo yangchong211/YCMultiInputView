@@ -51,12 +51,12 @@ dependencies {
     implementation rootProject.ext.autodisposeKtx
 
     implementation project(':YCConductor')
-    implementation project(':conductor-modules:viewpager')
-    implementation project(':conductor-modules:viewpager2')
-    implementation project(':conductor-modules:rxlifecycle2')
-    implementation project(':conductor-modules:autodispose')
-    implementation project(':conductor-modules:arch-components-lifecycle')
-    implementation project(':conductor-modules:androidx-transition')
+    implementation project(':YCConductorModules:viewpager')
+    implementation project(':YCConductorModules:viewpager2')
+    implementation project(':YCConductorModules:rxlifecycle2')
+    implementation project(':YCConductorModules:autodispose')
+    implementation project(':YCConductorModules:arch-components-lifecycle')
+    implementation project(':YCConductorModules:androidx-transition')
 
     debugImplementation rootProject.ext.leakCanary
     releaseImplementation rootProject.ext.leakCanaryNoOp

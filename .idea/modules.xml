@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-modules/YCConductorModule.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-modules/YCConductorModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/YCUiToolHelper.iml" filepath="$PROJECT_DIR$/.idea/YCUiToolHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCMultiInputViewLib/YCUiToolHelper.CustomView.iml" filepath="$PROJECT_DIR$/.idea/modules/YCMultiInputViewLib/YCUiToolHelper.CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor/YCUiToolHelper.YCConductor.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor/YCUiToolHelper.YCConductor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-lint/YCUiToolHelper.YCConductorLint.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-lint/YCUiToolHelper.YCConductorLint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/YCUiToolHelper.YCConductorModules.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/YCUiToolHelper.YCConductorModules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/androidx-transition/YCUiToolHelper.YCConductorModules.androidx-transition.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/androidx-transition/YCUiToolHelper.YCConductorModules.androidx-transition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/arch-components-lifecycle/YCUiToolHelper.YCConductorModules.arch-components-lifecycle.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/arch-components-lifecycle/YCUiToolHelper.YCConductorModules.arch-components-lifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/autodispose/YCUiToolHelper.YCConductorModules.autodispose.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/autodispose/YCUiToolHelper.YCConductorModules.autodispose.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/rxlifecycle2/YCUiToolHelper.YCConductorModules.rxlifecycle2.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/rxlifecycle2/YCUiToolHelper.YCConductorModules.rxlifecycle2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager/YCUiToolHelper.YCConductorModules.viewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager/YCUiToolHelper.YCConductorModules.viewpager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager2/YCUiToolHelper.YCConductorModules.viewpager2.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager2/YCUiToolHelper.YCConductorModules.viewpager2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YCUiToolHelper.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YCUiToolHelper.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/YCUiToolHelper.demo.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/YCUiToolHelper.demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-modules/androidx-transition/androidx-transition.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-modules/androidx-transition/androidx-transition.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-modules/arch-components-lifecycle/arch-components-lifecycle.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-modules/arch-components-lifecycle/arch-components-lifecycle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-modules/autodispose/autodispose.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-modules/autodispose/autodispose.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-modules/rxlifecycle2/rxlifecycle2.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-modules/rxlifecycle2/rxlifecycle2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-modules/viewpager/viewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-modules/viewpager/viewpager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-modules/viewpager2/viewpager2.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-modules/viewpager2/viewpager2.iml" />
     </modules>
   </component>
 </project>
