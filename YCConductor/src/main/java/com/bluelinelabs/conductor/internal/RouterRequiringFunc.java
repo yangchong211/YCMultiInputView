@@ -1,4 +1,4 @@
-package com.didi.app.nova.skeleton.conductor.internal;
+package com.bluelinelabs.conductor.internal;
 
 public interface RouterRequiringFunc {
     void execute();

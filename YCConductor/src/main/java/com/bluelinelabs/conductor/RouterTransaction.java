@@ -1,11 +1,12 @@
-package com.didi.app.nova.skeleton.conductor;
+package com.bluelinelabs.conductor;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
 
-import com.didi.app.nova.skeleton.conductor.internal.TransactionIndexer;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+
+import com.bluelinelabs.conductor.internal.TransactionIndexer;
 
 
 /**
@@ -24,7 +25,7 @@ public class RouterTransaction {
     private static final String KEY_ATTACHED_TO_ROUTER = "RouterTransaction.attachedToRouter";
 
     @NonNull
-    final Controller controller;
+    public final Controller controller;
     private String tag;
     private String pageName;
 
@@ -160,4 +161,11 @@ public class RouterTransaction {
         return bundle;
     }
 
+    public int getTransactionIndex() {
+        return transactionIndex;
+    }
+
+    public void setTransactionIndex(int transactionIndex) {
+        this.transactionIndex = transactionIndex;
+    }
 }

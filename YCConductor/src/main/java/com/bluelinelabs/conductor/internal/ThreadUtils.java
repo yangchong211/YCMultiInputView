@@ -1,4 +1,4 @@
-package com.didi.app.nova.skeleton.conductor.internal;
+package com.bluelinelabs.conductor.internal;
 
 import android.os.Looper;
 import android.util.AndroidRuntimeException;

@@ -1,19 +1,18 @@
-package com.didi.app.nova.skeleton.conductor;
+package com.bluelinelabs.conductor;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.UiThread;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.ViewGroup;
 
-import com.didi.app.nova.skeleton.conductor.embed.FragmentLifecycle;
-import com.didi.app.nova.skeleton.conductor.internal.FragmentLifecycleHandler;
-import com.didi.app.nova.skeleton.conductor.internal.LifecycleHandler;
-import com.didi.app.nova.skeleton.conductor.internal.ThreadUtils;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.UiThread;
+
+import com.bluelinelabs.conductor.Controller;
+import com.bluelinelabs.conductor.Router;
+import com.bluelinelabs.conductor.internal.LifecycleHandler;
+import com.bluelinelabs.conductor.internal.ThreadUtils;
 
 
 /**
@@ -39,7 +38,7 @@ public final class Conductor {
      */
     @NonNull
     @UiThread
-    public static Router attachRouter(@NonNull FragmentActivity activity, @NonNull ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public static Router attachRouter(@NonNull Activity activity, @NonNull ViewGroup container, @Nullable Bundle savedInstanceState) {
         ThreadUtils.ensureMainThread();
 
         LifecycleHandler lifecycleHandler = LifecycleHandler.install(activity);
@@ -50,34 +49,4 @@ public final class Conductor {
         return router;
     }
 
-    /**
-     * install Conductor into {@link Fragment}.
-     * Call this method on {@link Fragment#onAttach(Activity)}
-     *
-     * @param fragment
-     * @return FragmentLifecycle
-     */
-    @Nullable
-    @UiThread
-    public static FragmentLifecycle install(@NonNull Fragment fragment) {
-        ThreadUtils.ensureMainThread();
-        return FragmentLifecycleHandler.install(fragment);
-    }
-
-    /**
-     * Call attachRouter after {@link Conductor#install}
-     *
-     * @param fragment
-     * @param container
-     * @param savedInstanceState
-     * @return
-     */
-    @Nullable
-    @UiThread
-    public static Router attachRouter(@NonNull Fragment fragment, @NonNull ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ThreadUtils.ensureMainThread();
-        Router router = FragmentLifecycleHandler.getFragmentRouter(fragment, container, savedInstanceState);
-        router.rebindIfNeeded();
-        return router;
-    }
 }
