@@ -1,4 +1,4 @@
-package com.ns.yc.ycmultiinputview;
+package com.ns.yc.demo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

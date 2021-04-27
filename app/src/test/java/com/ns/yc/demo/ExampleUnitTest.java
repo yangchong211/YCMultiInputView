@@ -1,4 +1,4 @@
-package com.ns.yc.ycmultiinputview;
+package com.ns.yc.demo;
 
 import org.junit.Test;
 

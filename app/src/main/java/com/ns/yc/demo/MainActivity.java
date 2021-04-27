@@ -1,4 +1,4 @@
-package com.ns.yc.ycmultiinputview;
+package com.ns.yc.demo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
