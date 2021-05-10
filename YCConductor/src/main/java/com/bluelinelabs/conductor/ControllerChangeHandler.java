@@ -206,6 +206,7 @@ public abstract class ControllerChangeHandler {
                 fromView = null;
             }
 
+            //移除和添加视图
             handler.performChange(container, fromView, toView, isPush, new ControllerChangeCompletedListener() {
                 @Override
                 public void onChangeCompleted() {

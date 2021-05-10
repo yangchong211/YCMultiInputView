@@ -548,11 +548,12 @@ public abstract class Router {
         Iterator<RouterTransaction> backstackIterator = backstack.reverseIterator();
         while (backstackIterator.hasNext()) {
             RouterTransaction transaction = backstackIterator.next();
-
-            if (transaction.controller().getNeedsAttach()) {
-                performControllerChange(transaction, null, true, new SimpleSwapChangeHandler(false));
+            Controller controller = transaction.controller();
+            if (controller.getNeedsAttach()) {
+                SimpleSwapChangeHandler swapChangeHandler = new SimpleSwapChangeHandler(false);
+                performControllerChange(transaction, null, true, swapChangeHandler);
             } else {
-                setRouterOnController(transaction.controller());
+                setRouterOnController(controller);
             }
         }
     }
