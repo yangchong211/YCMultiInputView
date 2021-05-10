@@ -44,7 +44,8 @@ public class RouterTransaction {
     }
 
     RouterTransaction(@NonNull Bundle bundle) {
-        controller = Controller.newInstance(bundle.getBundle(KEY_VIEW_CONTROLLER_BUNDLE));
+        Bundle bundleBundle = bundle.getBundle(KEY_VIEW_CONTROLLER_BUNDLE);
+        controller = Controller.newInstance(bundleBundle);
         pushControllerChangeHandler = ControllerChangeHandler.fromBundle(bundle.getBundle(KEY_PUSH_TRANSITION));
         popControllerChangeHandler = ControllerChangeHandler.fromBundle(bundle.getBundle(KEY_POP_TRANSITION));
         tag = bundle.getString(KEY_TAG);

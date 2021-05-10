@@ -97,15 +97,22 @@ class Backstack implements Iterable<RouterTransaction> {
         return false;
     }
 
+    /**
+     * 异常情况下保存数据
+     * @param outState              outState
+     */
     void saveInstanceState(@NonNull Bundle outState) {
         ArrayList<Bundle> entryBundles = new ArrayList<>(backstack.size());
         for (RouterTransaction entry : backstack) {
             entryBundles.add(entry.saveInstanceState());
         }
-
         outState.putParcelableArrayList(KEY_ENTRIES, entryBundles);
     }
 
+    /**
+     * 重启之后恢复数据
+     * @param savedInstanceState    bundle
+     */
     void restoreInstanceState(@NonNull Bundle savedInstanceState) {
         ArrayList<Bundle> entryBundles = savedInstanceState.getParcelableArrayList(KEY_ENTRIES);
         if (entryBundles != null) {

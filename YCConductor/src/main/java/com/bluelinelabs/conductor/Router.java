@@ -644,6 +644,10 @@ public abstract class Router {
         }
     }
 
+    /**
+     * 异常情况下保存数据
+     * @param outState              outState
+     */
     public void saveInstanceState(@NonNull Bundle outState) {
         Bundle backstackState = new Bundle();
         backstack.saveInstanceState(backstackState);
@@ -652,6 +656,10 @@ public abstract class Router {
         outState.putBoolean(KEY_POPS_LAST_VIEW, popsLastView);
     }
 
+    /**
+     * 重启之后恢复数据
+     * @param savedInstanceState    bundle
+     */
     public void restoreInstanceState(@NonNull Bundle savedInstanceState) {
         Bundle backstackBundle = savedInstanceState.getParcelable(KEY_BACKSTACK);
         //noinspection ConstantConditions

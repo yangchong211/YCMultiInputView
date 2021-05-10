@@ -80,7 +80,8 @@ public class LifecycleHandler extends Fragment implements ActivityLifecycleCallb
 
     @NonNull
     public Router getRouter(@NonNull ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ActivityHostedRouter router = routerMap.get(getRouterHashKey(container));
+        int routerHashKey = getRouterHashKey(container);
+        ActivityHostedRouter router = routerMap.get(routerHashKey);
         if (router == null) {
             router = new ActivityHostedRouter();
             router.setHost(this, container);
@@ -118,6 +119,7 @@ public class LifecycleHandler extends Fragment implements ActivityLifecycleCallb
 
         if (!hasRegisteredCallbacks) {
             hasRegisteredCallbacks = true;
+            //监听activity的生命周期
             activity.getApplication().registerActivityLifecycleCallbacks(this);
 
             // Since Fragment transactions are async, we have to keep an <Activity, LifecycleHandler> map in addition
@@ -435,7 +437,8 @@ public class LifecycleHandler extends Fragment implements ActivityLifecycleCallb
             out.writeInt(requestCode);
         }
 
-        public static final Parcelable.Creator<PendingPermissionRequest> CREATOR = new Parcelable.Creator<PendingPermissionRequest>() {
+        public static final Parcelable.Creator<PendingPermissionRequest> CREATOR =
+                new Parcelable.Creator<PendingPermissionRequest>() {
             @Override
             public PendingPermissionRequest createFromParcel(Parcel in) {
                 return new PendingPermissionRequest(in);

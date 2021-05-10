@@ -22,6 +22,7 @@ import com.bluelinelabs.conductor.internal.ThreadUtils;
 public final class Conductor {
 
     private Conductor() {
+
     }
 
     /**
@@ -38,14 +39,12 @@ public final class Conductor {
      */
     @NonNull
     @UiThread
-    public static Router attachRouter(@NonNull Activity activity, @NonNull ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public static Router attachRouter(@NonNull Activity activity, @NonNull ViewGroup container,
+                                      @Nullable Bundle savedInstanceState) {
         ThreadUtils.ensureMainThread();
-
         LifecycleHandler lifecycleHandler = LifecycleHandler.install(activity);
-
         Router router = lifecycleHandler.getRouter(container, savedInstanceState);
         router.rebindIfNeeded();
-
         return router;
     }
 
