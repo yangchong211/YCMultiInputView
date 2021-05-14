@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/YCUiToolHelper.iml" filepath="$PROJECT_DIR$/.idea/YCUiToolHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCMultiInputViewLib/YCUiToolHelper.CustomView.iml" filepath="$PROJECT_DIR$/.idea/modules/YCMultiInputViewLib/YCUiToolHelper.CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor/YCUiToolHelper.YCConductor.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor/YCUiToolHelper.YCConductor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/YCUiToolHelper.YCConductorDemo.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/YCUiToolHelper.YCConductorDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/conductor-lint/YCUiToolHelper.YCConductorLint.iml" filepath="$PROJECT_DIR$/.idea/modules/conductor-lint/YCUiToolHelper.YCConductorLint.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/YCUiToolHelper.YCConductorModules.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/YCUiToolHelper.YCConductorModules.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/androidx-transition/YCUiToolHelper.YCConductorModules.androidx-transition.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/androidx-transition/YCUiToolHelper.YCConductorModules.androidx-transition.iml" />
@@ -14,7 +15,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager/YCUiToolHelper.YCConductorModules.viewpager.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager/YCUiToolHelper.YCConductorModules.viewpager.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager2/YCUiToolHelper.YCConductorModules.viewpager2.iml" filepath="$PROJECT_DIR$/.idea/modules/YCConductorModules/viewpager2/YCUiToolHelper.YCConductorModules.viewpager2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/YCUiToolHelper.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/YCUiToolHelper.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/YCUiToolHelper.demo.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/YCUiToolHelper.demo.iml" />
     </modules>
   </component>
 </project>
